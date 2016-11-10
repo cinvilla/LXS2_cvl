@@ -1,0 +1,25 @@
+    1  mkdir lxsi_cvr
+    2  mkdir historial fuente
+    3  mv historial lxsi_cvr
+    4  mv fuente lxsi_cvr
+    5  mkdir lxsi_cvr/misce
+    6  ls
+    7  cd lxsi_cvr
+    8  ls
+    9  cd ..
+   10  rm -rf lxsi_cvr
+   11  mkdir lxsi-cvr-$HOSTNAME
+   12  LS
+   13  ls
+   14  cd lxsi-cvr-system-linux
+   15  cd ..
+   16  mkdir lxsi-cvr-system-linux/historial
+   17  mkdir lxsi-cvr-system-linux/fuente
+   18  mkdir lxsi-cvr-system-linux/misce
+   19  ls lxsi-cvr-system-linux
+   20  cd historial
+   21  ls
+   22  cd lxsi-cvr-system-linux
+   23  ls
+   24  cd historial
+   25  history > archivo
