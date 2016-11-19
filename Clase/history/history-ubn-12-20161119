@@ -1,0 +1,248 @@
+    1  ls
+    2  rm -rf LXS2_cvl
+    3  ls -la
+    4  ls
+    5  ls -a
+    6  #mv .bash_history .bash_history
+    7  mkdir old_history
+    8  mv .bash_history old_history
+    9  cat .bash_history
+   10  touch .bash_history
+   11  cat /old_history/.bash_history | less
+   12  history
+   13  ### Inicio de sección de entrecomillado
+   14  ###
+   15  history
+   16  ####
+   17  #####
+   18  ######
+   19  history
+   20  VAR1=trump
+   21  echo $VAR1 es una rata
+   22  ### Tipos de entrecomillado
+   23  # "", ``,
+   24  # "", ``, ''
+   25  ## : Defino un string 
+   26  `` : Ejecuto un commando para procesar la salida
+   27  ##`` : Ejecuto un commando para procesar la salida
+   28  ## '':Utilizo el significado literal de los caractres
+   29  echo '$VAR1 es una rata'
+   30  git status
+   31  ls
+   32  git clone https://github.com/cinvilla/LXS2_cvl.git
+   33  ls
+   34  git clone https://github.com/emvar/LXS2_evb.git
+   35  ## mv `ls *.log` tmp1/ la salida de commando dentro del `` se va a utilizar para moverlo a tmp1/
+   36  ## ls tmp1/*.log todo lo que tenga extensión .log
+   37  ## mv auth.log error.log out.log tmp1/ es igual al commando mv `ls *.log` tmp1/
+   38  ## El bash corre análisis sobre las líneas de comando de modo que le da precedencia a comandos que están dentro de caracteres especiales
+   39  echo hola mundo
+   40  ### se define donde empieza y termina un string
+   41  echo "hola
+   42  mundo"
+   43  ## se define las comillas para que  nos dé el > prompt
+   44  echo "
+   45  hola
+   46  mundo"
+   47  ### salto de línea \n
+   48  history | tail -n 5
+   49  ## sacar host que están en la lista de dhcp.conf
+   50  ## grep  host * <con todos los archivos>
+   51  ## find . me da la salida del path de todos los archivos
+   52  find .
+   53  ##echo el varlor del \$ están en 500 colones >> toma el valor del dolar literal
+   54  echo el varlor del \$ están en 500 colones 
+   55  echo 4\*2\>10\ es\ falso
+   56  echo "4*2>10 es falso"
+   57  echo "el precio total es de \$5"
+   58  echo 'El precio total es de $5"
+   59  echo 'El precio total es de $5'
+   60  ls
+   61  cd LXS2_cvl
+   62  cp algo/tmp
+   63  echo $?
+   64  ls
+   65  echo $0
+   66  cp algo /tmp
+   67  cp algo /tmp && mdkdir tmp3
+   68  ls 
+   69  pstree | less
+   70  sudo apt install apache2
+   71  pstree | less
+   72  cd /var/log/apache2
+   73  less access.log
+   74  watch -n 1 "tail access.log"
+   75  if -4 addr
+   76  ip -4 addr
+   77  watch -n 1 "tail access.log"
+   78  netstat -latunp
+   79  netstat -latunpa
+   80  netstat -latunp
+   81  netstat -latunp | grep LISTEN
+   82  ###netstat -latunp | grep LISTEN DAEMONs listening
+   83  ssh user1@10.124.18.28
+   84  route -n
+   85  ps aux | head
+   86  ps aux | less
+   87  ps aux | grep ssh
+   88  ps aux | grep sshd
+   89  cd
+   90  ls
+   91  cd LXS2_cvl
+   92  ls
+   93  cd Clase
+   94  ls
+   95  cd misc
+   96  touch test1.txt
+   97  vim test1.txt
+   98  jobs
+   99  cd /etc/apache2/sites-available
+  100  ls
+  101  cat 000-default.conf  | grep -v "#" 
+  102  jobs
+  103  fg 
+  104  jobs
+  105  fg 
+  106  vim test1.txt
+  107  fg
+  108  ls
+  109  jobs
+  110  vim test1.txt
+  111  ls
+  112  locate test1.txt
+  113  jobs
+  114  cd ..
+  115  cd
+  116  ls
+  117  pushd LXS2_cvl
+  118  pushd /LXS2_cvl/Clase
+  119  pushd /LXS2_cvl/ClaseII
+  120  ls
+  121  dirs
+  122  dirs -v
+  123  cd /var/www
+  124  dirs
+  125  dirs -v
+  126  popd +1
+  127  dirs -v
+  128  cd 
+  129  yes hola > /dev/null &
+  130  ping 127.0.0.1 > /dev/null &
+  131  jobs
+  132  ps aux
+  133  ps aux | grepp access.log 
+  134  ps aux | grep access.log 
+  135  kill -9 22176
+  136  kill -9 21292
+  137  kill -9 21361
+  138  jobs
+  139  ps aux | grep clone
+  140  kill -9 19604
+  141  ps aux | grep ps
+  142  ps aux | grep tree
+  143  ps aux | grep pstree
+  144  ps aux | grep watch
+  145  kill -9 21369
+  146  kill -9 21503
+  147  jobs
+  148  ps aux | grep test1.txt
+  149  kill -9 22013
+  150  kill -9 22017
+  151  jobs
+  152  ps aux | grep less
+  153  kill -9 19906
+  154  kill -9 21321
+  155  jobs
+  156  ls
+  157  cd LXS2_cvl/misc
+  158  cd LXS2_cvl
+  159  ls
+  160  cd Clase/misc
+  161  ls
+  162  cat test1.txt
+  163  vim test1.txt
+  164  jobs
+  165  fg 10
+  166  jobs
+  167  bg 2
+  168  bg 10
+  169  jobs
+  170  ps 
+  171  ps -l
+  172  w
+  173  ps -u www-data
+  174  pgrep ping
+  175  ps -a
+  176  kill -15 `pgrep yes`
+  177  jobs
+  178  cd ..
+  179  cd
+  180  ls
+  181  cd Desktop
+  182  ls
+  183  locate Clase nov 19 cin
+  184  locate Clase nov 19 cin | less
+  185  locate Clase nov 19 cin | grep cin
+  186  locate Clase nov 19 cin | grep nov
+  187  ps -l
+  188  cd
+  189  ls
+  190  cd Documents
+  191  ls
+  192  cd ..
+  193  ls /proc/irq
+  194  cat /proc/cpuinfo
+  195  ##  free va a /proc para ver como se está utilizando
+  196  free -h
+  197  # resultados en megas y gigas
+  198  df -lh
+  199  # -h human redable
+  200  uptime
+  201  # ver cuando tiempo tiene el servidor arriba
+  202  tail -5 history
+  203  history | tail -5
+  204  cd Desktop
+  205  ls
+  206  cd ..
+  207  ls
+  208  ssh sysadmin@10.124.18.28
+  209  ls
+  210  cd LXS2_cvl
+  211  sudo apt install htop
+  212  htop
+  213  top
+  214  apt-cache search iotop
+  215  sudo apt install iotop
+  216  iotop
+  217  git status
+  218  cat Clase/misc/test1.txt
+  219  iotop
+  220  cd ..
+  221  ls 
+  222  cd LXS2_evb
+  223  ls
+  224  cd ..
+  225  sudo apt-cache search iiftop
+  226  sudo apt-cache search iftop
+  227  sudo apt install iftop
+  228  history
+  229  ls
+  230  cd LXS2_cvl
+  231  ls
+  232  cd Clase
+  233  ls
+  234  cd history
+  235  ls
+  236  history > history-$HOSTNAME-`date +%Y%m%d`
+  237  ls
+  238  history 
+  239  ls
+  240  cd LXS2_evb
+  241  ls
+  242  cd ..
+  243  cd LXS2_cvl
+  244  ls
+  245  cd Clase
+  246  ls
+  247  cd history
+  248  history > history-$HOSTNAME-`date +%Y%m%d`
