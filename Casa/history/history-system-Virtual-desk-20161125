@@ -73,3 +73,160 @@
    73  history > history/history-$HOSTNAME-`date %Y%m%d`
    74  history > history/history-$HOSTNAME-`date + %Y%m%d`
    75  history > history/history-$HOSTNAME-`date +%Y%m%d`
+    1   
+    2  ls
+    3  cd Desktop
+    4  ls
+    5  cd Gitdir-20161125
+    6  ls
+    7  cd LXS2_cvl
+    8  ls
+    9  cd history
+   10  ls
+   11  rm -rf misc
+   12  cd ..
+   13  cd src
+   14  vim reporte.sh
+   15  ?
+   16  git status
+   17  cd ..
+   18  ls
+   19  ls -la
+   20  echo "*~" > .gitignore
+   21  echo "*.swp" >> .gitignore
+   22  echo "*.log" >> .gitignore
+   23  cat .gitignore
+   24  git status
+   25  git log
+   26  git diff src/reporte.sh
+   27  git add .gitignore
+   28  git add src/reporte.sh
+   29  git status
+   30  git commit -m "Sistema de Reportes, salidas de las interfaces activas y los puertos habilitados"
+   31  git status
+   32  git log
+   33  gitk
+   34  git push origin master
+   35  cd ..
+   36  ls
+   37  git clone origin https://github.com/cinvilla/LXS2_cvl.git Clase
+   38  mkdir clase
+   39  git clone https://github.com/cinvilla/LXS2_cvl.git clase
+   40  git status
+   41  git init
+   42  git status
+   43  cd clase/
+   44  ls
+   45  cd Casa
+   46  ls
+   47  rm *
+   48  rm *.txt
+   49  rm casa-perro.txt file1.txt file2.txt lxsi-cvr-system-linux
+   50  rm casa-perro.txt file1.txt file2.txt 
+   51  rm casa-perro.txt
+   52  rm -rf casa-perro.txt
+   53  rm -rf file1.txt
+   54  rm -rf file2.txt
+   55  rm -rf lxsi-cvr-system-linux
+   56  ls
+   57  pwd
+   58  cd ..
+   59  ls
+   60  mv LXS2_cvl
+   61  mv LXS2_cvl /home/sysadmin/Desktop/Gitdir-20161125/clase/Casa
+   62  ls /home/sysadmin/Desktop/Gitdir-20161125/clase/Casa
+   63  ls
+   64  cd clase
+   65  ls
+   66  mv Casa ../
+   67  ls
+   68  cd ..
+   69  ls
+   70  git clone https://github.com/cinvilla/LXS2_cvl.git
+   71  ls
+   72  cd clase
+   73  ls
+   74  cd Clase
+   75  ls
+   76  ls -l
+   77  cd ..
+   78  rm clase
+   79  rm -rf clase
+   80  ls
+   81  mv Casa LXS2_cvl
+   82  cd LXS2_cvl
+   83  ls
+   84  rm -rf Case
+   85  rm -rf Casa
+   86  git status
+   87  git add Casa
+   88  git status
+   89  cd ..
+   90  ls
+   91  mv Casa LXS2_cvl
+   92  cd LXS2_cvl
+   93  ls
+   94  git status
+   95  git add Casa/
+   96  git status
+   97  ls
+   98  cd Casa
+   99  ls
+  100  cd ..
+  101  git commit -m "Trabajo desde la case, session I"
+  102  git config user.email cylivralaj@hotmailc.om
+  103  git config user.name Cinthya Villalobos 
+  104  git commit -m "Trabajo desde la case, session I"
+  105  ls
+  106  mv Casa ../
+  107  ls
+  108  rm -rf Clase
+  109  git status
+  110  git rm Casa
+  111  git -rm Clase
+  112  git rm -f Clase
+  113  git rm -r Clase
+  114  git sattus
+  115  git status
+  116  cd ..
+  117  ls
+  118  mv Casa LXS2_cvl
+  119  ls
+  120  cd LXS2_cvl
+  121  ls
+  122  git status
+  123  git add Casa
+  124  git sttus
+  125  git status
+  126  git commit -m "Trabajo desde Casa, session I"
+  127  git push origin master
+  128  ls
+  129  cd Casa
+  130  ls
+  131  cd LXS2_cvl
+  132  ls
+  133  git status
+  134  mv src ../
+  135  mv history ../
+  136  ls
+  137  cd ..
+  138  git status
+  139  git add .
+  140  git status
+  141  ls
+  142  rm LXS2_cvl
+  143  rm -rf LXS2_cvl
+  144  ls
+  145  git status
+  146  git rm -r LXS2_cvl
+  147  ls
+  148  git status
+  149  git commit -m "Actualizacion del repo"
+  150  git push origin master
+  151  ls
+  152  cd history
+  153  ls
+  154  history
+  155  history >> history-$HOSTANAME-`date +%Y%m%d`
+  156* 
+  157  history >> history-$HOSTNAME-`date +%Y%m%d`
