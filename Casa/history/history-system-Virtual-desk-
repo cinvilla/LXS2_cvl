@@ -1,0 +1,74 @@
+    1  history
+    2  history > file
+    3  cat file
+    4  mkdir LXS2_cvl/
+    5  rm file
+    6  ls
+    7  cd LXS2_cvl
+    8  tree
+    9  history > history/history-$HOSTNAME-`date +%Y%m%d`
+   10  mkdir history
+   11  history > history/history-$HOSTNAME-`date +%Y%m%d`
+   12  ls
+   13  ls history
+   14  cat history/history-system-Virtual-desk-20161125
+   15  tree
+   16  mkdir src
+   17  touch src/.gitignore
+   18  tree
+   19  ls -a src/
+   20  echo "*~" > src/.gitignore
+   21  echo "*.swp" >> src/.gitignore
+   22  ls src/.gitignore
+   23  cat src/.gitignore
+   24  sudo netstat -latunp
+   25  tree
+   26  ls -la
+   27  ls -la src
+   28  git init
+   29  ls
+   30  history > history/history-$HOSTNAME-`date +%Y%m%d`
+   31  ls
+   32  cat history-$HOSTNAME-`date +%Y%m%d`
+   33  ls history
+   34  cat history-system-Virtual-desk-20161125
+   35  cat history/history-system-Virtual-desk-20161125
+   36  tree .git
+   37  vim .gitconfig
+   38  ls
+   39  ls -la
+   40  rm .gitconfig.swp
+   41  ls
+   42  ls =la
+   43  ls -la
+   44  vim .gitconfig
+   45  ls -la
+   46  cat .gitconfig
+   47  git staus
+   48  git status
+   49  git .gitconifg
+   50  git add gitconfig
+   51  git add .gitconfig
+   52  git history/
+   53  git add history/
+   54  git add src/
+   55  git status
+   56  git commit -m "Inicio del repositorio de nivel II"
+   57  git config user.email cylivralaj@hotmail.com
+   58  git config user.name Cinthya Villalobos
+   59  git commit -m "Inicio del repositorio de nivel II"
+   60  git status
+   61  git log
+   62  pwd
+   63  gitk
+   64  git status
+   65  git remote add https://github.com/cinvilla/LXS2_cvl.git
+   66  git remote add origin https://github.com/cinvilla/LXS2_cvl.git
+   67  git remote -v
+   68  man git | grep remote 
+   69  git push origin master
+   70  man git | grep diff
+   71  ls
+   72  git status
+   73  history > history/history-$HOSTNAME-`date %Y%m%d`
+   74  history > history/history-$HOSTNAME-`date + %Y%m%d`
