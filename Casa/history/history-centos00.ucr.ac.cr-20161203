@@ -1,0 +1,86 @@
+    1  yum update
+    2  yum install net-tools epel-release
+    3  yum update
+    4  shutdaow -h now
+    5  shutdow -h now
+    6  shutdown -h now
+    7  fdisk -l
+    8  sudo virsh
+    9  fdisk /dev/vda
+   10  fdisk /dev/vdb
+   11  history
+   12  yum install lvm2
+   13  pvcreate /dev/vda1
+   14  pvcreate /dev/vdb1
+   15  pvdisplay
+   16  vgdisplay
+   17  vgcreate vg01
+   18  vgcreate vg01 /dev/vda1
+   19  vgdisplay
+   20  lvcreate -L 200M -n misConfigs vg01
+   21  lvdisplay
+   22  release -a
+   23  release 
+   24  vgdisplay
+   25  mkfs -t ext4 /dev/mapper/vg01-misconfigs
+   26  mkfs -t ext4 /dev/mapper/vg01-misConfigs
+   27  ls -l /dev/mapper/
+   28  cd /mnt
+   29  mkdir configs
+   30  mount /dev/mapper/vg01-misConfigs /mnt/configs
+   31  mount 
+   32  cd configs
+   33  ls
+   34  df -lh
+   35  unmount /mnt/configs
+   36  cd ..
+   37  unmount /mnt/configs
+   38  unmount /configs
+   39  umount /configs
+   40  umount config
+   41  umount configs
+   42  vgextend vg01 /dev/sdb1
+   43  vgextend vg01 /dev/vd1
+   44  vgextend vg01 /dev/vdd1
+   45  vgextend vg01 /dev/vdb1
+   46  vgdisplay
+   47  lvextend -L+200M /dev/vg01/misConfigs
+   48  lvdisplay
+   49  df -lh
+   50  mount /dev/mapper/vg01/mnt/configs
+   51  cd ..
+   52  mount /dev/mapper/vg01/mnt/configs
+   53  ls
+   54  cd mnt
+   55  ls
+   56  mount /dev/mapper/vg01-misConfigs /mnt/configs
+   57  df -lh
+   58  umount configs
+   59  e2fsck 
+   60  git init
+   61  yum install git
+   62  e2fsck -f /dev/vg01/misConfigs
+   63  resize2fs /dev/vg01/misConfigs
+   64  mount /dev/mapper/vg01-misConfigs /mnt/configs
+   65  df -lh
+   66  git init
+   67  cat .gitconfig
+   68  git clone https://github.com/cinvilla/LXS2_cvl.git
+   69  ls
+   70  mv LXS2_cvl ../..
+   71  cd ../..
+   72  ls
+   73  umount configs/
+   74  umount mnt/configs/
+   75  lvremove misConfigs
+   76  lvremove /dev/vg01/misConfigs
+   77  vgremove vg01
+   78  pvremove /dev/vdb1
+   79  pvremove /dev/vda1
+   80  ls
+   81  cd LXS2_cvl
+   82  cd Casa
+   83  ls
+   84  cd history
+   85  history-$HOSTNAME-`date +%Y%m%d`
+   86  history > history-$HOSTNAME-`date +%Y%m%d`
