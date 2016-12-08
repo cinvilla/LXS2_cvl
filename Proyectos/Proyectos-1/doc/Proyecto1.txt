@@ -1,0 +1,77 @@
+             ***********************
+             *****  Proyecto 1 *****
+             ***********************
+
+#####################
+##### Instalación ######
+#####################
+
+En el paso # 1 la instalación de la máquina se realiza a través de un anfitrión en mi caso, utilicé la versión VirtualBox para Windows.
+
+
+
+
+###############################################
+### Disco extra al sistema de virtualización utilizado ###
+###############################################
+
+La forma más fácil de hacer este procedimiento es a través del panel de configuración dentro del virtual box, eligiendo el dispositivo en cuestión y editando la sección de almacenamiento.
+
+
+
+
+###############################
+### Salida de Display commands  ###
+###############################
+
+<Revisar sección entregables> 
+
+  sudo fdisk -l  para revisar información de discos y particiones antes y después del cambio del disco extra.
+  sudo pvdisplay 
+  sudo vgdisplay
+  sudo lvdisplay
+  
+
+
+
+#######################
+### Particionar el Disco ###
+#######################
+
+  sudo fdisk /dev/sdb para ingresar el modo edición del disco.
+  sudo pvcreate /dev/sdb1 para crear un volumen físico y asignarle la partición sdb1 al mismo.
+
+
+
+
+############################################
+#### Extender el grupo de volúmenes centos ######
+############################################
+
+  sudo vgextend centos /dev/sdb1 extiende el grupo de volúmenes de manera que el pv previamente creado se asigna como parte de este grupo, para una mayor disponibilidad de espacio de almacenaje.
+  sudo vgdisplay 
+
+
+
+############################################
+###### Extender el volumen lógico Swap  #########
+############################################
+
+  sudo lvextend -L+200M /dev/centos/swap para extender el volumen lógico swap en 200 M adicionales.
+
+
+
+##################################
+ ### resize2fs" para tabla de archivos###
+##################################
+  sudo resize2fs /dev/centos/swap 
+
+
+
+######################################### 
+### Extienda la partición de root en 512 MB  #### 
+################################## ######
+   sudo lvextend -L+512M /dev/centos/root para extender el volumen lógico root en 512 M adicionales.
+  
+
+
