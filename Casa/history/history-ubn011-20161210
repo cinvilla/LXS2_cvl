@@ -1,0 +1,798 @@
+    1  ls
+    2  sudo su-
+    3  sudo su -
+    4  exit
+    5  git clone https://github.com/silviamora2930/LXS"_smora.git
+    6  q
+    7  wq
+    8  exit
+    9  git clone https://github.com/silviamora2930/LXS_smora.git
+   10  sudo apt-get install git
+   11  sudo apt-get update
+   12  git config --global user.email "email "silen2914@gmail.com"
+   13  git config --global user.email email "silen2914@gmail.com"
+   14  git config --global user.email "silen2914@gmail.com"
+   15  git config --global user.name "silviamora"
+   16  ls
+   17  cd LXS2/
+   18  git clone https://github.com/silviamora2930/LXS2_smora.git
+   19  cd LXS2_smora
+   20  ls
+   21  ls -l
+   22  history > history_1207016_$HOSTNAME
+   23  ls -l
+   24  git status
+   25  mv history_1207016_ubn011 history
+   26  cd history
+   27  ls
+   28  git status
+   29  git add history_1207016_ubn011 
+   30  git commit -m "History de la clase de LVM. Parte 1"
+   31  git log
+   32  git push origin master
+   33  exit
+   34  history
+   35  root
+   36  /
+   37  root/
+   38  clear
+   39  /root
+   40  clear
+   41  sudo
+   42  sudo su-
+   43  morita22
+   44  sudo su-
+   45  sudo su -
+   46  /LXS2_silviamora2930/history$ sudo su -
+   47  sudo su -
+   48  ls
+   49  cd LXS2_smora/
+   50  ls
+   51  cd history/
+   52  ls
+   53  ls 'l
+   54  ls -l
+   55  git status 
+   56  git add  history-root_12072016-ubn011 
+   57  git commit -m "History de root clase LVM clase 1"
+   58  git push -u origin master
+   59  exit
+   60  id
+   61  #sudo usermod -a -G libvirt sysadmin
+   62  #ese comando no se ejecuto porque ubunto lo hizo automaticamente en sistema como centos no hay que hacerlo
+   63  sudo su -
+   64  cd LXS2_silviamora2930
+   65  cd /tmp
+   66  git clone https://github.com/emvarg/LXS2_evargas.git
+   67  cd LXS2_evargas/
+   68  git pull origin master
+   69  ls
+   70  cd scripts/
+   71  ls
+   72  cat TMP_vir.sh 
+   73  cd scripts/
+   74  ls
+   75  ls -l
+   76  cp TMP_vir.sh ~LXS2_evargas/scripts/
+   77  cp TMP_vir.sh ~/LXS2_evargas/scripts/
+   78  cd .
+   79  cd ..
+   80  ls scripts/
+   81  git remote add origin https://github.com/silviamora2930/LXS2_smora.git
+   82  #cp TMP_vir.sh ~/LXS2_smora/
+   83  mkdir /home/sysadmin/LXS2_smora/scripts
+   84  git pull 
+   85  cp scripts/cnts00.sh /home/sysadmin/LXS2_smora/scripts/
+   86  cd /home/sysadmin/LXS2_smora/scripts/
+   87  ls
+   88  ls -l 
+   89  git status 
+   90  cd ..
+   91  ls
+   92  rm "h origin master"
+   93  git status
+   94  git add scripts/
+   95  git status
+   96  mkdir /srv/servidores
+   97  sudo su -
+   98  mkdir /servidores
+   99  mkdir /srv/servidores
+  100  sudo su -
+  101  ls scripts/
+  102  cd scripts/
+  103  ls
+  104  sudo ./cnts00.sh
+  105  ls
+  106  ls -l
+  107  sudo bash cnts00.sh
+  108  git status
+  109  git add cnts00.sh 
+  110  git commit -m "Archivo para instalar maquina en centos"
+  111  git push origin master
+  112  exit
+  113  history
+  114  clear
+  115  cd LXS2_smora
+  116  ls
+  117  ls -l
+  118  history > history_12070162_$HOSTNAME
+  119  ls -l
+  120  git status
+  121  mv history_12070162_ubn011 history
+  122  cd history
+  123  ls
+  124  git status
+  125  git add history_12070162_ubn011
+  126  git commit -m "History de la clase del 12 de julio 2016"
+  127  git log
+  128  git push origin master
+  129  clear
+  130  cd ..
+  131  cd .
+  132  cd ...
+  133  exit
+  134  sudo apt-get install virt-viewer
+  135  cd LXS2_smora
+  136  sudo apt-get install virt-viewer gitk
+  137  ls
+  138  tree
+  139  sudo apt-get install tree
+  140  virsh
+  141  cd scripts
+  142  ls
+  143  sudo su -
+  144  ssh 192.168.122.202
+  145  exit
+  146  echo $var1
+  147  exit
+  148  sudo su -
+  149  var1=casa
+  150  var2=perro
+  151  echo "La casa $var1 del $var2 es roja"
+  152  sudo apt-get install htop
+  153  export var1=casa2
+  154  echo $var1
+  155  bash
+  156  var1=perro
+  157  unset var1
+  158  echo $var1
+  159  pwd
+  160  cd /etc/
+  161  pwd
+  162  env
+  163  env | grep PWD
+  164  cd /usr/share/doc/vim-nox
+  165  cd
+  166  exit
+  167  sudo su -
+  168  exit
+  169  cd LXS2_silviamora2930/
+  170  cd LXS2_smora
+  171  ls
+  172  cd history/
+  173  ls
+  174  history > 15072016_$HOSTNAME
+  175  sudo su -
+  176  exit
+  177  cd LXS2_smora/
+  178  ls
+  179  cd history/
+  180  ls
+  181  history > history_15072016_$HOSTNAME
+  182  sudo su -
+  183  ls
+  184  git status
+  185  git add history_15072016_ubn011
+  186  git commit -m "History de clase de bash + final de lvm"
+  187  git push origin master
+  188  clear
+  189  suso apt-get install catdoc
+  190  sudo apt-get install catdoc
+  191  cd ...
+  192  cd ..
+  193  exit
+  194  bash --version
+  195  echo $BASH_VERSION
+  196  ls
+  197  pwd
+  198  df -h
+  199  tmp
+  200  cd tmp
+  201  cd /tmp
+  202  dmesg > file1
+  203  cp playa ~ 2> error.log
+  204  grep stat error.log
+  205  mkdir foldder{1,2,3}
+  206  touch folder{1,2,3]/file-{a,b}
+  207  touch folder{1,2,3}/file-{a,b}
+  208  echo lolo
+  209  echo $HOSTNAME
+  210  echo yo tengo $100
+  211  echo "yo tengo \$100"
+  212  echo 4*2 >10 es falso
+  213  help set
+  214  echo tengo \$100
+  215  echo 'tengo $100'
+  216  echo "tengo $100"
+  217  echo "estoy en el servidor $HOSNAME y soy $USER""
+  218  echo "estoy en el servidor $HOSNAME y soy $USER"
+  219  echo "estoy en el servidor $HOSNAME y soy $USER 
+  220  clear
+  221  htop
+  222  pstree
+  223  pstree | less
+  224  ps aux | grep ligh
+  225  sudo kill -9 1432
+  226  clear
+  227  pstree | less
+  228  ps aux | less
+  229  virsh
+  230  cd ..
+  231  exit
+  232  ls
+  233  pwd
+  234  vim .bashrc 
+  235  sudo apt-get install vim-nox
+  236  vim .bashrc 
+  237  source .bashrc
+  238  ls
+  239  ls -la
+  240  bash SpecVars.sh
+  241  echo " " > SpecVars.sh.err
+  242  cat SpecVars.sh.err
+  243  dmesg | tail > archivo1.txt
+  244  ls -l
+  245  bash SpecVars.sh.err
+  246  rm archivo1.txt*
+  247  ls -l
+  248  rm file1
+  249  ls -l
+  250  rm SpecVars.sh.err
+  251  ls -l
+  252  bash SpecVars.sh.err
+  253  cd /src
+  254  bash SpecVars.sh.err
+  255  dmesg | tail > archivo1.txt
+  256  ls -l
+  257  bash SpecVars.sh
+  258  sudo apt-get install exim4
+  259  sudo vim /etc/exim4/update-exim4.conf.conf 
+  260  sudo vim /etc/exim4//update-exim4.conf.conf 
+  261  sudo dpkg-reconfigure exim4
+  262  ip -4 addr
+  263  sudo dpkg-reconfigure exim4
+  264  sudo dpkg-reconfigure exim4-config
+  265  cd LXS2
+  266  cd LXS2/
+  267  cd LXS2_smora
+  268  git clones https://github.com/emvarg/LXS2_evargas.git
+  269  git clone https://github.com/emvarg/LXS2_evargas.git
+  270  ls
+  271  vim bashrc
+  272  vim bash rc
+  273  cd ..
+  274  vim .bashrc
+  275  sudo su -
+  276  ip config
+  277  ipconfig
+  278  ip -4 addr
+  279  sudo apt-get install openssh-server
+  280  vim .bashrc
+  281  source .bashrc
+  282  pwd
+  283  ls
+  284  clear
+  285  ps aux
+  286  ps -x
+  287  pgrep nm-applet
+  288  sudo su -
+  289  uptame
+  290  uptime
+  291  echo $SHELL
+  292  clear
+  293  cd LXS2_smora
+  294  cd src/
+  295  ls
+  296  vim SpecVar.sh
+  297  git clone -b master https://github.com/emvarg/LXS2_evargas.git
+  298  ls
+  299  git clone -b master https://github.com/emvarg/LXS2_evargas.git MiReporemoto
+  300  ls -l
+  301  cd MiReporemoto
+  302  git log
+  303  cd
+  304  cd LXS2/
+  305  cd LXS2_smora
+  306  ls
+  307  ls -l
+  308  clear
+  309  cd ..
+  310  sudo apt-get install exim4
+  311  sudo su -
+  312  sudo apt-get install screen
+  313  screen
+  314  cd LXS2_smora
+  315  src
+  316  cd src
+  317  vim resumen1.sh
+  318  git add resumen1.sh
+  319  git commit -m "ejemplo de pasp"
+  320  git push origin master
+  321  exit
+  322  apt-get update
+  323  sudo su -
+  324  ip -4 addr
+  325  ls
+  326  dmesg > file 1
+  327  cat file 1 | mail -s "info de file 1" silen29146
+  328  cat file 1 | mail -s "info de file 1" silen2914
+  329  cat file 1 | mail -s "info de file 1" silen2914@gmail.com
+  330  apt-get update
+  331  sudo su -
+  332  fg
+  333  cd LXS2/
+  334  cd LXS2
+  335  cd LXS2_smora
+  336  fg
+  337  cd src
+  338  fg
+  339  vim ciclo for
+  340  bash resumen1.sh
+  341  clear
+  342  vim ciclo for
+  343  cd LXS2_smora
+  344  src
+  345  cd src
+  346  exit
+  347  sudo su -
+  348  sudo update-alternatives --config editor
+  349  sudo apt-get install vim-nox
+  350  sudo visudo
+  351  sudo visudo -x /etc/sudoers
+  352  sudo visudo -c
+  353  su -
+  354  sudo su -
+  355  sudo visudo -c
+  356  sudo su -
+  357  sudo adduser user1
+  358  sudo adduser user 1
+  359  apropos apache2
+  360  exit 
+  361  apt-get install lvm2
+  362  dpkg --get-selection | grep lv
+  363  sudo apt-get install lvm2
+  364  sudo apt-get lvm2
+  365  dpkg --get-selection | grep lv
+  366  exit 
+  367  dpkg --get-selection | grep lv
+  368  dpkg --get-selection | grep lvm
+  369  m
+  370  sudo apt-get install git 
+  371  ls ..
+  372  sudo vi sudo 
+  373  git
+  374  ls ..
+  375  sudo apt-get install git
+  376  sudo apt-get install openssh-sever
+  377  sudo apt-get -f install openssh-sever
+  378  ip -4 addr
+  379  touch Music/song.mpt
+  380  ls Music/algo 
+  381  ls Music/ algo 
+  382  ls Music/ algo > otro 2> error
+  383  cat error
+  384  ls Music/ algo > otro 2> error
+  385  cat error
+  386  ls Music/ algo > otro 2> error
+  387  cat error
+  388  touch scrip
+  389  cat error
+  390  cat otro
+  391  ls Music/ algo > otro 2> error
+  392  cat otro
+  393  ls -lh Music/ scrip > otor 2>> error
+  394  ls -lh Music/ scrip 2>> error
+  395  ls -lh Music/ scrip casa 2>> error
+  396  ls -lh Music/ scrip casa 2 > error
+  397  ls -lh Music/ scrip casa 2> error
+  398  ls -lh Music/ scrip casa 2>> error
+  399  ls -lh Music/ scrip casa &>> error
+  400  ls -lh Music/ scrip casa &>> error2
+  401  il
+  402  ls
+  403  pwd
+  404  cd
+  405  ls
+  406  git cloon https://githup.com/emvarg/LXS2_emmanuel.git
+  407  git clone https://github.com/emvarg/LXS2_emmanuel.git
+  408  is
+  409  ls
+  410  cd LXS2_emmanuel/
+  411  ls
+  412  git log 
+  413  cd ..
+  414  ls
+  415  cd LXS2_emmanuel/
+  416  ls
+  417  git remote -v 
+  418  git remote add caleb https://github.com/calebtm/LXS2_caleb.git
+  419  git remote -v 
+  420  git push caleb master
+  421  ls
+  422  cd ..
+  423  ls
+  424  git clone https://github.com/calebtm/LXS2_caleb.git
+  425  cd LXS2_caleb/
+  426  tree
+  427  cd misc/
+  428  ls
+  429  mkdir clase3
+  430  ls
+  431  cdcla
+  432  cd clase3/
+  433  ls
+  434  cp ../dhcpd.conf .
+  435  ls
+  436  cat dhcpd.conf 
+  437  cat dhcpd.conf | grep -v "#"
+  438  ls
+  439  git remote -v 
+  440  cat dhcpd.conf | grep -v "#"
+  441  git remote -v 
+  442  cat dhcpd.conf | grep -v "#"
+  443  history short
+  444  cat dhcpd.conf 
+  445  history > history/history-$hostname`date +%Y%m%d`
+  446  ls
+  447  l
+  448  history > history/history-$hostname`date +%Y%m%d`
+  449  ls history
+  450  cd
+  451  mkdir history
+  452  history > history/history-$hostname`date +%Y%m%d`
+  453  ls history
+  454  git add history/history-ubn-00-20160924
+  455  git add history/history
+  456  git add history/history-ubn-00-20160924
+  457  cd LXS2_caleb
+  458  ls
+  459  cd history/
+  460  ls
+  461  exit 
+  462  git clone https://github.com/emvarg/LXS2_emmanuel.git
+  463  git clone https://github.com/emvarg/LXS2_emmanuel.git repo-emma
+  464  git original master
+  465  ls
+  466  cd LXS2_caleb
+  467  git original master
+  468  -ls
+  469  vim specbar.ssh
+  470  git clone https://github.com/emvarg/LXS2_emmanuel.git repo-emma
+  471  git clone https://github.com/emvarg/LXS2_emmanuel.git
+  472  ls
+  473  git remote -v 
+  474  history short
+  475  cd history/
+  476  ls
+  477  -ls
+  478  git clone https://github.com/calebtm/LXS2_caleb.git
+  479  git original master
+  480  git clone https://github.com/emvarg/LXS2_emmanuel.git
+  481  ls -l
+  482  ex
+  483  vin specbar.ssh
+  484  vim specbar.ssh
+  485  git remote add origin https://github.com/calebtm/LSX2_JCTM.git
+  486  git init
+  487  echo "# LSX2_JCTM" >> README.md
+  488  git init
+  489  git add README.md
+  490  git commit -m "first commit"
+  491  git remote add origin https://github.com/calebtm/LSX2_JCTM.git
+  492  git push -u origin master
+  493  sudo apt-get install libir-bin qemu-kvn virt-manager
+  494  sudo apt-get install libvir-bin qemu-kvn virt-manager
+  495  sudo apt-get install libvirt-bin qemu-kvn virt-manager
+  496  sudo apt-get install libvirt-bin qemu-sistem qemu-kvn virt-manager
+  497  sudo apt-get install libvirt-bin qemu-sistem qemu-kvm virt-manager
+  498  sudo apt-get install libvirt-bin qemu-system qemu-kvm virt-manager
+  499  ls
+  500  sudo apt-get install libvirt-bin qemu-system qemu-kvm virt-manager
+  501  ip -4 addr
+  502  virsh
+  503  sudo su -
+  504  ip -4 addr
+  505  ls
+  506  git clone https://github.com/emvarg/LXS2_evb.git
+  507  ls
+  508  rm -rf LXS2_emmanuel
+  509  rm -rf LXS2_evargas
+  510  ls
+  511  rm -rf LXS2_evargas
+  512  ls
+  513  rm -rf LXS2_evargas
+  514  ls
+  515  cd LXS2_evargas
+  516  cd LXS2_evb
+  517  ls
+  518  cd ..
+  519  ls
+  520  rm -rf LXS2_evargas
+  521  ls
+  522  git clone https://github.com/emvarg/LXS2_evb.git
+  523  git clone https://github.com/cinvilla/LXS2_clv.git
+  524  git clone https://github.com/cinvilla/LXS2_cvl
+  525  git clone https://github.com/cinvilla/LXS2_cvl.git
+  526  ls
+  527  rm -rf LXS2_cvl
+  528  ls
+  529  git clone https://github.com/cinvilla/LXS2_cvl.git
+  530  ls
+  531  rm -rf LXS2_cvl
+  532  ls
+  533  rm -rf LXS2_cvl
+  534  rm -rf LXS2_smora
+  535  ls
+  536  git clone https://github.com/cinvilla/LXS2_cvl.git
+  537  ls
+  538  cd LXS2_evb
+  539  ls
+  540  cp -r lvm ../LXS2_cvl
+  541  cd ..
+  542  ls
+  543  rm -rf LXS2_caleb
+  544  ls
+  545  rm -rf MiReporemoto
+  546  ls
+  547  cd LXS2_cvl
+  548  ls
+  549  git status
+  550  git add lvm/
+  551  git commit -m "Archivo sin editar"
+  552  cd ..
+  553  ls
+  554  cd LXS2_cvl
+  555  ls
+  556  cd Casa
+  557  ls
+  558  cd history
+  559  ls
+  560  cd ..
+  561  ls
+  562  cd ..
+  563  ls
+  564  git status
+  565  git push origin master
+  566  cat ~
+  567  cat ~/.gitconfig
+  568  vim ~/.gitconfig
+  569  ls
+  570  cd lvm
+  571  ls
+  572  ls 
+  573  ls-l
+  574  ls -l
+  575  cd virsh
+  576  ls
+  577  ls -l
+  578  cd ../..
+  579  ls
+  580  cd
+  581  ls
+  582  ls -l
+  583  ls -la
+  584  cat .gitconfig
+  585  ls
+  586  cd LXS2_cvl
+  587  ls
+  588  ls -la
+  589  cat .gitconfig
+  590  vim .gitconfig
+  591  cat .gitconfig
+  592  id
+  593  git status
+  594  git add .gitconfig
+  595  git commit -m "Personal Information"
+  596  git pull origin master
+  597  ls
+  598  cd lvm
+  599  ls
+  600  vim gui-lvm.wiki
+  601  sudo su -
+  602  who
+  603  sudo su -
+  604  sudo su -
+  605  ls
+  606  cd /media
+  607  ls
+  608  locate media-pool
+  609  fin media-pool
+  610  find media-pool
+  611  dd if=/dev/zero of=./disk-00.img bs=1M count=256
+  612  sudo su -
+  613  cd
+  614  ls .ssh/
+  615  ssh-keygen -t rsa
+  616  ls .ssh/
+  617  ssh sysadmin@192.168.122.202
+  618  ls
+  619  ls .ssh/
+  620  ls
+  621  rm -rf repo-emma
+  622  ls
+  623  ssh sysadmin@192.168.122.202
+  624  virsh
+  625  sudo virsh
+  626  history
+  627  ls
+  628  cd LXS2_cvl
+  629  ls
+  630  cd Casa
+  631  ls
+  632  history
+  633  cd history
+  634  ls
+  635  history > history-$HOSTNAME-``
+  636  history > history-$HOSTNAME-`date +%Y%m%d`
+  637  ls
+  638  rm -rf history-ubn011-
+  639  git status
+  640  git add history-ubn011-20161203
+  641  git commit -m "History Dic 3"
+  642  git push origin master
+  643  remote -v
+  644  git remote -v
+  645  ls
+  646  cd /
+  647  ls
+  648  cd media
+  649  ls
+  650  cd sysadmin
+  651  cd media-pool
+  652  dd if=/dev/zero of=./disk-00.img bs=1M count=256
+  653  sudo su -
+  654  ls
+  655  su sysadmin
+  656  ls
+  657  cd LXS2_cvl
+  658  cd lvm
+  659  ls
+  660  vim gui-lvm.wiki
+  661  ls
+  662  cd ..
+  663  ls
+  664  sudo su -
+  665  ls
+  666  cd LXS2_evb
+  667  ls
+  668  git pull origin master
+  669  cd ..
+  670  ls
+  671  cd LXS2_cvl
+  672  bash
+  673  ps -l
+  674  sh
+  675  ls -l `which bash`
+  676  VAR=`which bash1
+  677  exit
+  678  quit
+  679  VAR=`which bash`
+  680  echo VAR
+  681  echo $VAR
+  682  echo $SHELL
+  683  unset VAR
+  684  uname -a
+  685  ## uname -a tipo de architectura
+  686  ## exit 0 para ver si un codigo terminO exitosamente
+  687  ## echo $? status del Ultimo comando que se corriO
+  688  echo $?
+  689  cp algo otro
+  690  echo $?
+  691  ls
+  692  cd Casa
+  693  ls
+  694  vim exitcodes.sh
+  695  ls -l
+  696  chmod 750 exit-codes.sh
+  697  ls
+  698  chmod 750 exitcodes.sh
+  699  /exitcodes.sh
+  700  /.exitcodes.sh
+  701  ls
+  702  ./exitcodes.sh
+  703  echo $?
+  704  vim sysadmin@ubn011:~/LXS2_cvl$ ## uname -a tipo de architectura
+  705  LD
+  706  ls 
+  707  cd LXS2_cvl
+  708  git status
+  709  cd Casa
+  710  ls
+  711  git add exitcodes.sh
+  712  ls
+  713  cd src
+  714  ls
+  715  git add #!/bin/bash
+  716  ls -l
+  717  ps -l
+  718  cp algo otro
+  719  exit 0
+  720  ls
+  721  cd #!/bin/bash
+  722  ls -l
+  723  ps -l
+  724  cp algo otro
+  725  exit 0
+  726  ls
+  727  cd LXS2_cvl
+  728  ls
+  729  cd Casa
+  730  ls
+  731  cd src
+  732  ls
+  733  git status
+  734  ls
+  735  cd LXS2_cvl
+  736  cd Casa/src
+  737  ls
+  738  ./resumen casa carro perro gato
+  739  ./resumen.sh casa carro perro gato
+  740  git status
+  741  ./resumen.sh casa casa gato
+  742  git add exitcodes.sh resumen.sh
+  743  git commit -m "Ejemplo Anidados"
+  744  git push origin master
+  745  git pull origin master
+  746  git push origin master
+  747  vim cp-ejec
+  748  ls
+  749  rm -rf cp-ejec
+  750  ls
+  751  vim cp-ejec
+  752  ls
+  753  cd LXS2_evb
+  754  ls
+  755  cd src
+  756  ls
+  757  git pull origin master
+  758  cd ..
+  759  cd
+  760  rm -rf LXS2_evb
+  761  git clone https://github.com/emvarg/LXS2_evb
+  762  cd LXS2_evb
+  763  ls
+  764  cd src
+  765  ls
+  766* 
+  767  cd
+  768  ls
+  769  cd LXS2_cvl
+  770  cd Casa
+  771  ls
+  772  cd src
+  773  ls
+  774  ./resume.sh gato perro cas
+  775  ./resumen.sh casa carro perro
+  776  chmod 750 distros.sh
+  777  ./distros.sh
+  778  ./distros.sh debian
+  779  git status
+  780  git add resumen.sh
+  781  git commit -m "Ejemplo de for, contadores y comando let"
+  782  git pull origin master
+  783  git add distros.sh
+  784  git commit -m "Ejemplo de case" 
+  785  git push origin master
+  786  ./distros.sh debian
+  787  ls
+  788  ./distros.sh
+  789  cd ..
+  790  ls
+  791  history
+  792  cd history
+  793  ls
+  794  history > history-$HOSTNAME-`date +%Y%m%d`
+  795  ls
+  796  git status
+  797  git add history-ubn011-20161210
+  798  history > history-$HOSTNAME-`date +%Y%m%d`
