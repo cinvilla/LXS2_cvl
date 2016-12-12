@@ -1,6 +1,13 @@
-             ***********************
-             *****  Proyecto 1 *****
-             ***********************
+                                                                                          ***********************
+*****  Proyecto 1 ******
+***********************
+
+Este documento contiene una breve explicación sobre los diferentes comandos que se utilizaron en el proceso de realización de este proyecto1, además de explicaciones del porque los mismos son utilizados.
+
+En la sección de entregables se pueden ver capturas del proceso, las cuáles tiene explicación en el presente documento.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #####################
 ##### Instalación ######
@@ -9,7 +16,7 @@
 En el paso # 1 la instalación de la máquina se realiza a través de un anfitrión en mi caso, utilicé la versión VirtualBox para Windows.
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ###############################################
 ### Disco extra al sistema de virtualización utilizado ###
@@ -18,7 +25,7 @@ En el paso # 1 la instalación de la máquina se realiza a través de un anfitrión 
 La forma más fácil de hacer este procedimiento es a través del panel de configuración dentro del virtual box, eligiendo el dispositivo en cuestión y editando la sección de almacenamiento.
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ###############################
 ### Salida de Display commands  ###
@@ -26,52 +33,70 @@ La forma más fácil de hacer este procedimiento es a través del panel de configur
 
 <Revisar sección entregables> 
 
-  sudo fdisk -l  para revisar información de discos y particiones antes y después del cambio del disco extra.
+  sudo fdisk -l  
+    Para revisar información de discos y particiones antes y después del cambio del disco extra.
+         >  Ls-Disc-00
+             Contiene datos de los discos del sistema por defecto, antes de los cambios.
+         > Ls-Disc-01 
+             Contienen datos de los discos del sistema después de agregar un disco adicional.
+
   sudo pvdisplay 
-  sudo vgdisplay
-  sudo lvdisplay
+         > pv-original - volumen físico
+             El dispositivo creado mediante el proceso de partición se nombra como un pv y formará parte del grupo de volúmenes llamado centos.
+         > vg-original - grupo de volúmenes 
+            Se crean utilizando devices-particiones, a la partición en cuestión se le indica que forma parte del vg "x", ésta puede ser asignada a diferentes vg.
+         > lv-original - volumen lógico 
+             Del espacio total disponible en un grupo de volúmenes, se designa una "x" cantidad para crear un volumen lógico.
   
 
-
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #######################
 ### Particionar el Disco ###
 #######################
 
-  sudo fdisk /dev/sdb para ingresar el modo edición del disco.
-  sudo pvcreate /dev/sdb1 para crear un volumen físico y asignarle la partición sdb1 al mismo.
+  sudo fdisk /dev/sdb 
+         > Part-disco00
+             Contiene datos sobre el proceso al particionar el disco sdb en un sdb1 device.
+         > Part-disco01
+             Despliega el detalle del nuevo device sdb1 que se creó.
+     
+  sudo pvcreate /dev/sdb1
+         > pvcreat-sdb1
+            Se designa la partición como un volúmen físico para poder ser utilizado dentro de un grupo de volúmenes.
 
-
-
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ############################################
 #### Extender el grupo de volúmenes centos ######
 ############################################
 
-  sudo vgextend centos /dev/sdb1 extiende el grupo de volúmenes de manera que el pv previamente creado se asigna como parte de este grupo, para una mayor disponibilidad de espacio de almacenaje.
-  sudo vgdisplay 
+  sudo vgextend centos /dev/sdb1 
+          > vg-exte-cent 
+              Se adiciona el volúmen físico al grupo de volúmenes para darle más capacidad de almacenamiento.
+ 
+  sudo vgdisplay
+           > vg-extendido
+              Se muestra que el espacio disponible es mayor.
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ############################################
-###### Extender el volumen lógico Swap  #########
+###### Extender el volumen lógico Swap  ##########
 ############################################
 
-  sudo lvextend -L+200M /dev/centos/swap para extender el volumen lógico swap en 200 M adicionales.
+   sudo swapoff -v /dev/centos/swap  Para deshabilitar la función de swapping en el volumen lógico.
+   sudo lvm lvresize /dev/centos/swap -L +256M para reacomodar la capacidad en 200 M el volumen lógico.
+   sudo mkswap /dev/centos/swap para darle formato nuevamente al volumen lógico, ya con el nuevo tamaño del swap.
+   sudo swapon -va Para habilitar nuevamente la función de swapping en el volumen extentido.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+Links consultados 
+https://github.com/emvarg/LXS2_evb/blob/master/lvm/lvm.wiki
 
-##################################
- ### resize2fs" para tabla de archivos###
-##################################
-  sudo resize2fs /dev/centos/swap 
-
-
-
-######################################### 
-### Extienda la partición de root en 512 MB  #### 
-################################## ######
-   sudo lvextend -L+512M /dev/centos/root para extender el volumen lógico root en 512 M adicionales.
-  
-
+http://tldp.org/HOWTO/LVM-HOWTO/extendlv.html
+https://www.linux.com/news/all-about-linux-swap-space
+http://www.ehowstuff.com/how-to-create-lvm-on-centos-7-rhel-7/ 
+http://stackoverflow.com/questions/13362910/trying-to-resize2fs-eb-volume-fails
+https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-swap-adding.html
 
